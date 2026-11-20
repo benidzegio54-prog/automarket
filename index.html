@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AutoMarket</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">AUTO<span>MARKET</span></div>
+
+    <nav>
+        <a href="#home">მთავარი</a>
+        <a href="#cars">მანქანები</a>
+        <a href="#analysis">ფასები</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <h1>იპოვე შენი სასურველი მანქანა</h1>
+
+    <p>მოძებნე ავტომობილი MyAuto-ზე მარტივად</p>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="carSearch"
+            placeholder="მაგ: BMW F10 2015"
+        >
+
+        <button onclick="searchCar()">ძებნა</button>
+
+    </div>
+
+    <p class="small-text">
+        ჩაწერე მანქანის მარკა, მოდელი ან გამოშვების წელი
+    </p>
+
+</section>
+
+<section id="cars">
+
+    <h2>პოპულარული ავტომობილები</h2>
+
+    <div class="cars">
+
+        <div class="car">
+
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600">
+
+            <h3>BMW 530i</h3>
+
+            <p>წელი: 2020</p>
+
+            <p>ძრავი: 2.0</p>
+
+            <h2>$22,000</h2>
+
+            <button onclick="searchSpecific('BMW 530i')">
+                განცხადებების ნახვა
+            </button>
+
+        </div>
+
+        <div class="car">
+
+            <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600">
+
+            <h3>Mercedes E-Class</h3>
+
+            <p>წელი: 2019</p>
+
+            <p>ძრავი: 2.0</p>
+
+            <h2>$25,000</h2>
+
+            <button onclick="searchSpecific('Mercedes E Class')">
+                განცხადებების ნახვა
+            </button>
+
+        </div>
+
+        <div class="car">
+
+            <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?w=600">
+
+            <h3>Toyota Camry</h3>
+
+            <p>წელი: 2021</p>
+
+            <p>ძრავი: 2.5</p>
+
+            <h2>$19,000</h2>
+
+            <button onclick="searchSpecific('Toyota Camry')">
+                განცხადებების ნახვა
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="analysis">
+
+    <h2>ფასების ანალიზი</h2>
+
+    <div class="analysis">
+
+        <div>
+            <h3>BMW 530i</h3>
+            <p>სავარაუდო ფასი: $22,000</p>
+            <p class="green">საშუალო ფასი</p>
+        </div>
+
+        <div>
+            <h3>Mercedes E-Class</h3>
+            <p>სავარაუდო ფასი: $25,000</p>
+            <p class="orange">მაღალი ფასი</p>
+        </div>
+
+        <div>
+            <h3>Toyota Camry</h3>
+            <p>სავარაუდო ფასი: $19,000</p>
+            <p class="green">საშუალო ფასი</p>
+        </div>
+
+    </div>
+
+    <p class="notice">
+        ფასები საილუსტრაციოა და არ წარმოადგენს MyAuto-ს რეალურ მონაცემებს.
+    </p>
+
+</section>
+
+<footer>
+
+    <h2>AUTOMARKET</h2>
+
+    <p>იპოვე სასურველი ავტომობილი ერთ სივრცეში.</p>
+
+    <p>© 2026 AutoMarket</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
